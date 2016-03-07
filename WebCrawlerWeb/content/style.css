@@ -1,0 +1,101 @@
+*{font-family: 'verdana',sans-serif,monospace}
+body{background-color: #f1f1f1;}
+
+.pointer{cursor:pointer;}
+
+.hide{display: none;}
+.text-justify {
+  text-align: justify;
+}
+.vertical-text-middle{vertical-align: middle;}
+
+/* font */
+.f11{font-size: 11px;}
+
+/*color*/
+.black{color:black!important;}
+
+/* margin */
+.m5{margin:5px;}
+.m10{margin:10px;}
+.m15{margin:15px;}
+.m20{margin:20px;}
+.m25{margin:25px;}
+.m30{margin:30px;}
+
+.m5-top{margin-top:5px;}
+.m10-top{margin-top:10px;}
+.m15-top{margin-top:15px;}
+.m20-top{margin-top:20px;}
+.m25-top{margin-top:25px;}
+.m30-top{margin-top:30px;}
+
+.m5-bottom{margin-bottom:5px;}
+.m10-bottom{margin-bottom:10px;}
+.m15-bottom{margin-bottom:15px;}
+.m20-bottom{margin-bottom:20px;}
+.m25-bottom{margin-bottom:25px;}
+.m30-bottom{margin-bottom:30px;}
+
+.m5-left{margin-left:5px;}
+.m10-left{margin-left:10px;}
+.m15-left{margin-left:15px;}
+.m20-left{margin-left:20px;}
+.m25-left{margin-left:25px;}
+.m30-left{margin-left:30px;}
+
+.m5-right{margin-right:5px;}
+.m10-right{margin-right:10px;}
+.m15-right{margin-right:15px;}
+.m20-right{margin-right:20px;}
+.m25-right{margin-right:25px;}
+.m30-right{margin-right:30px;}
+
+/* padding */
+.p5{padding:5px;}
+.p10{padding:10px;}
+.p15{padding:15px;}
+.p20{padding:20px;}
+.p25{padding:25px;}
+.p30{padding:30px;}
+
+.p5-top{padding-top:5px;}
+.p10-top{padding-top:10px;}
+.p15-top{padding-top:15px;}
+.p20-top{padding-top:20px;}
+.p25-top{padding-top:25px;}
+.p30-top{padding-top:30px;}
+
+.p5-bottom{padding-bottom:5px;}
+.p10-bottom{padding-bottom:10px;}
+.p15-bottom{padding-bottom:15px;}
+.p20-bottom{padding-bottom:20px;}
+.p25-bottom{padding-bottom:25px;}
+.p30-bottom{padding-bottom:30px;}
+
+.p5-left{padding-left:5px;}
+.p10-left{padding-left:10px;}
+.p15-left{padding-left:15px;}
+.p20-left{padding-left:20px;}
+.p25-left{padding-left:25px;}
+.p30-left{padding-left:30px;}
+
+.p5-right{padding-right:5px;}
+.p10-right{padding-right:10px;}
+.p15-right{padding-right:15px;}
+.p20-right{padding-right:20px;}
+.p25-right{padding-right:25px;}
+.p30-right{padding-right:30px;}
+
+/* border */
+.border-bottom-grey{border-bottom: 1px solid #aaa;}
+.border-bottom-lightgrey{border-bottom: 1px solid #ddd;}
+
+/* custom */
+.header-color{color: #047D56;}
+#div-header{background-color: #047D56 ;color: #fff;}
+.story-title{color:#000!important;font-weight: 600;}
+.story-desc-home-display{text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:hover{background-color: #ccc;}
+.date_range{width:190px;}

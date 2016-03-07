@@ -1,0 +1,18 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-cs-12">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-cs-12 border-bottom-grey p10-bottom">
+        <h3 class="">{{title}}</h3>
+        <div class="pull-left">
+            <i> - {{ authorName }} {{ agencyName }}</i>
+        </div>
+        <div class="pull-right">
+            <i> {{pubDate}}</i>
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-cs-12 text-justify" ng-bind-html="description">
+       
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-cs-12 m20-top m20-bottom">
+        <a href="{{rcpLink}}" target="_blank" class="pull-left">RCP Link</a>
+        <a href="{{orginalLink}}" target="_blank" class="pull-right" id="outsourcelink">Read Full Article</a>
+    </div>
+</div>

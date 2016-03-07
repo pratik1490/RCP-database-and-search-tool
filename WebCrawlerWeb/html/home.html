@@ -1,0 +1,64 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <ul class="nav nav-pills pointer m10-top" id="menu">
+            <li role="presentation" class="active" id="li-TODAY"><a ng-click="menuClick('TODAY')" class="black">TODAY</a></li>
+            <li role="presentation" id="li-YESTERDAY"><a ng-click="menuClick('YESTERDAY')" class="black">YESTERDAY</a></li>
+            <li role="presentation"  id="li-WEEK"><a ng-click="menuClick('WEEK')" class="black">WEEK</a></li>
+            <li role="presentation"  id="li-MONTH"><a ng-click="menuClick('MONTH')" class="black">MONTH</a></li>
+            <li role="presentation" class="pull-right"  id="li-SEARCH"><a ng-click="menuClick('SEARCH')" class="black">SEARCH</a></li>
+            <li class="pull-right">
+                
+                
+            </li>
+                        
+        </ul> 
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m10-top hide" id="div-search">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+            <label>SEARCH :</label>
+            <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{searchFilter}}<span class="caret"></span></button>
+                    <ul class="dropdown-menu" id="search_menu">
+                        <li><a ng-click="searchMenuClick('Title')">Title</a></li>
+                        <li><a ng-click="searchMenuClick('Author')">Author</a></li>
+                        <li><a ng-click="searchMenuClick('Agency')">Agency</a></li>
+                    </ul>
+            </div>
+            <input type="text" class="form-control" aria-label="..." ng-change="searchStory()" ng-model="searchValue">
+        </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 pull-right">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>FROM :</label>
+                <input type="text" id="from" ng-change="searchStory()" placeholder="from" class="form-control pull-right m10-left" jqdatepicker ng-model="fromDate"/> 
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>TO :</label>
+                <input type="text" id="to" ng-change="searchStory()" placeholder="to" class="form-control pull-right m10-left" jqdatepicker ng-model="toDate"/>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m10-top" ng-init="getTodayData()">
+        <div ng-repeat="story in stories" id="storyList" class="border-bottom-lightgrey col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-left">
+            <div class=" text-center col-lg-1 ol-md-2 col-sm-3 col-xs-4 header-color">
+                <h4>{{story.pubDateDay}}</h4>
+                <span class="f11 pull-left">{{story.pubDateMonth}} </span>
+                <span  class="f11 pull-left ">&nbsp;{{story.pubDateYear}}</span>
+            </div>
+            <h5 class="vertical-text-middle col-lg-11 col-md-10 col-sm-9 col-xs-8">
+                <a class="story-title" href="#/story/{{story.Id}}">{{ story.Title }}</a>
+                <i style="font-size:12px;"> - 
+                    <a class="pointer" ng-click="searchAuthor(story.AuthorName)">{{ story.AuthorName }}</a> 
+                    <a class="pointer" ng-click="searchAgency(story.AgencyName)">{{ story.AgencyName }}</a>
+                </i>
+                <br/>
+                <br/>
+                <em class="f12 m20-top">Views : {{story.Views}}</em>
+            </h5>
+            
+        </div>
+    </div>
+</div>
